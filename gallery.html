@@ -2,8 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>danparisphotography</title>
+	<title>danparisphotography - gallery</title>
    		<link href="stylesheets/main.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="stylesheets/normalize.css" media="all" rel="stylesheet" type="text/css" />
         <!-- jQuery library (served from Google) -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
@@ -14,32 +15,34 @@
 </head>
 
 <body>
-	<div id="header">
+	<div class="header">
       <h1>danparisphotography</h1>
-    </div>
             <div class ="icons">
-    <a href="https://www.facebook.com/danielparisphoto/"><img src="images/fb.png" alt ="Facebook link" width="30px" height="30px"/></a>
-    <a href="https://twitter.com/tbwadanparis/"><img src="images/twitter.png" alt ="Twitter link" width="30px" height="30px"/></a>
-    </div>
-    <div id="main">
-    <div id="nav">
+                <a href="https://www.facebook.com/danielparisphoto/"><img src="images/fb.png" alt ="Facebook link" width="30px" height="30px"/></a>
+                <a href="https://twitter.com/tbwadanparis/"><img src="images/twitter.png" alt ="Twitter link" width="30px" height="30px"/></a>
+            </div> <!-- end of div icons -->
+    </div> <!-- end of header -->
+ 
+    
+    <div class="nav">
 
         <p><a href="home.html">home</a></p>
         
         <p><a href="about.html">about</a></p>
         
-        <p><a href="gallery.html">gallery</a></p>
+        <p><a href="gallery.html" style = "color:#42a5f5; font-size: 110%;">gallery</a></p>
         
         <p><a href="events.html">events</a></p>
         
         <p><a href="contact.html">contact</a></p>
 
-	</div>
+	</div> <!-- end of div nav -->
 			<script type="text/javascript" charset="utf-8">
               $(document).ready(function(){
                 $("a[rel^='prettyPhoto']").prettyPhoto();
               });
             </script>
+            <!-- pretty photo thumbs and images --> 
             <div>
             <a href="images/fullscreen/1.jpg" rel="prettyPhoto[myGallery]"><img src="images/thumbnails/1.jpg" width="60" height="60" alt="barbed wire twist" /></a>
 			<a href="images/fullscreen/2.jpg" rel="prettyPhoto[myGallery]"><img src="images/thumbnails/2.jpg" width="60" height="60" alt="barbed wire on wall" /></a>
@@ -83,8 +86,9 @@
             <a href="images/fullscreen/36.png" rel="prettyPhoto[myGallery]"><img src="images/fullscreen/36.png" width="60" height="60" alt="city beneath my feet in colour" /></a>
           
             </div>
+            <!-- end of pretty photo thumbs and images -->
 
-	</div>
+	
  <div id="footer">Copyright 2016 © danparisphotography.com</div>
 </body>
 </html>
