@@ -3,8 +3,18 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>danparisphotography - contact</title>
+   
+ <!-- Jquery -->
+<script src="external/jquery/jquery.js"></script>
+
+  
+<!-- CSS --> 
     <link href="stylesheets/main.css" media="all" rel="stylesheet" type="text/css" />
     <link href="stylesheets/normalize.css" media="all" rel="stylesheet" type="text/css" />
+
+<!-- Javascript -->
+<script src="javascripts/contact.js" type="text/javascript" charset="utf-8"></script>
+
 </head>
 
 <body>
@@ -32,21 +42,21 @@
     <h1> contact the artist</h1>
 
     <div id="comment-form">
-    <form method="post" action="">
+    <form id="Go">
     	<fieldset>
             <legend><h2>Feedback Form</h2></legend>
                     
                          <div class = "formrow">
-                           <input type="text" name="from" placeholder="Name"><br>
-                          </div>
+                           <input type="text" name="from" id ="from" placeholder="Name"> <div id ="FromBox"> </div>
+                          </div><br>
+                          <div class = "formrow"">
+                           <input type="text" name="subject" id ="subject" placeholder="Subject"> <div id ="SubjectBox"> </div>
+                          </div><br>
                           <div class = "formrow">
-                           <input type="text" name="subject" placeholder="Subject"><br>
-                          </div>
+                           <textarea rows="10" cols="40" name="message" id ="message" placeholder="type message here"></textarea><div id ="MessageBox"> </div>
+                          </div><br>
                           <div class = "formrow">
-                           <textarea rows="10" cols="40" name="message" placeholder="type message here"></textarea><br>
-                          </div>
-                          <div class = "formrow">
-                            <input type="submit" name="submit" value="Submit Feedback">
+                            <input type="submit" value="Submit Feedback">
                           </div>
            </fieldset>           
        </form>

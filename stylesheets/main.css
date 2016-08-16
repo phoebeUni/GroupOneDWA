@@ -265,6 +265,30 @@ input[type=submit] {
 
 
 
+/* hero div CSS*/
+#hero{
+  background-image:url(https://chrisaam.files.wordpress.com/2015/03/wallpaper-2846361.jpg);
+  background-size:cover;
+  position:relative;
+}
+
+#hero_header{
+	display:none;	
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-family: 'Josefin Slab', serif;
+  /*font-family:'Lobster', cursive; */
+  font-size:36px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+   	-webkit-transform: translate(0,-50%); /* Safari */
+    transform: translate(0,-50%); 
+   
+
+}
+
 
 
   
