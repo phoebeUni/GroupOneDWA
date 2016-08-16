@@ -24,19 +24,18 @@
     </div> <!-- end of header -->
  
     
-    <div class="nav">
-
-        <p><a href="home.html">home</a></p>
-        
-        <p><a href="about.html">about</a></p>
-        
-        <p><a href="gallery.html" style = "color:#42a5f5; font-size: 110%;">gallery</a></p>
-        
-        <p><a href="events.html">events</a></p>
-        
-        <p><a href="contact.html">contact</a></p>
-
-	</div> <!-- end of div nav -->
+   <div class="nav">
+    <ul class="topnav" id="myTopnav">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="contact.html">Contact</a></li> 
+    <li class="icon">
+    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+    </li>
+    </ul>
+    </div> <!-- end of div nav -->
 			<script type="text/javascript" charset="utf-8">
               $(document).ready(function(){
                 $("a[rel^='prettyPhoto']").prettyPhoto();
@@ -90,5 +89,15 @@
 
 	
  <div id="footer">Copyright 2016 © danparisphotography.com</div>
+  <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>

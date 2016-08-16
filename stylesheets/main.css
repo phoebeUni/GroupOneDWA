@@ -54,53 +54,43 @@ table, tr, td, tr
 	}
 
 /*navigation links	*/
-.nav
- 	{
-	text-align: right; 
-	background: #FFFFFF; 
-	color: #ffffff;
-	font: 18px Helvetica,Verdana, Arial,sans-serif;
-	font-weight:bold;
-	min-height:600px;
-	width: 10%;
-	float:left;
-	padding-right:10px;
-	margin-right:8%;
-	
-	 }
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
 
-a:link    {
-  /* Applies to all unvisited links */
-  text-decoration:  none;
-  font-weight:      bold;
-  color:            #cccccc;
-  } 
-a:visited {
-  /* Applies to all visited links */
-  text-decoration:  none;
-  font-weight:      bold;
-  color:            #333333;
-  } 
-a:hover   {
-  /* Applies to links under the pointer */
-  /*text-decoration:  underline;*/
-  font-weight:      bold;
-  color:            #689DC1;
-  } 
-a:active  {
-  /* Applies to activated links */
-  color:            #689DC1;
-  font-weight:      bold;
-    } 
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
 
 .header
  
 	{
-	height: 70px; 
+	height: 80px; 
 	text-align: left; 
 	background: #FFFFFF; 
 	color: #333333;
-	font: 20px Helvetica,Verdana, Arial,sans-serif;
+	font: 2em Helvetica,Verdana, Arial,sans-serif;
 	padding-bottom:4px;
 	margin-bottom:2%;
 	margin-left: 2%;
@@ -143,8 +133,7 @@ table.bordered tr th, table.bordered tr td
 #photo
  
 	{
-	text-align:center
-	background: #FFFFFF; 
+	text-align:center;
 	color: #ffffff;
 	font: 15px Helvetica,Verdana, Arial,sans-serif;
 	/*min-height: 800px;*/
@@ -232,6 +221,49 @@ input[type=submit] {
 	top:5%;
 
 }
+ @media screen and (max-width:680px){
+	.header {height: 80px; 
+	text-align: center; 
+	background: #FFFFFF; 
+	color: #333333;
+	font: 1.0em Helvetica,Verdana, Arial,sans-serif;
+	padding-bottom:4px;
+	margin-bottom:2%;
+	margin-left: 2%;}
+
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+  #photo {
+	 margin: 0 auto;
+   
+}
+}
+  @media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+ 
+
+
+
 
 
 
