@@ -3,7 +3,7 @@
 jQuery(document).ready(function($){
 
 // fade the header in 
-	 jQuery('#hero_header').fadeIn(10000);
+	 jQuery('#hero_header').fadeIn(5000);
  // Defining a function to set size for #hero 
 	function fullscreen(){
 		jQuery('#hero').css({

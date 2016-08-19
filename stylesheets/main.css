@@ -55,6 +55,9 @@ table, tr, td, tr
 
 /*navigation links	*/
 /* Remove margins and padding from the list, and add a black background color */
+.nav-wrapper{
+	margin-left:22%;
+}
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -94,7 +97,7 @@ ul.topnav li.icon {display: none;}
 	font: 2em Helvetica,Verdana, Arial,sans-serif;
 	padding-bottom:4px;
 	margin-bottom:2%;
-	margin-left: 2%;
+	margin-left: 22%;
 	
 	
 	 }
@@ -147,13 +150,9 @@ table.bordered tr th, table.bordered tr td
  #comment-form
  {
 	/*text-align:center*/
-	background: #FFFFFF; 
+	background: #cccccc; 
 	color: #333333;
 	font: 12px Helvetica,Verdana, Arial,sans-serif;
-	/*min-height: 800px;*/
-	width:50%;
-	margin-left:10%;
-	padding:10px;
 	
 	 }
 .formrow{
@@ -164,10 +163,10 @@ table.bordered tr th, table.bordered tr td
 .container
  {
  	float: left;
-    width: 45%;
+    width: 50%;
 	text-align:justify;  	
   	line-height: 180%;
-  	;	
+  	margin-left:22%;	
  }
 	
 #content
@@ -275,7 +274,7 @@ input[type=submit] {
 }
 
 #hero_header{
-	display:none;	
+  display:none;	
   position:absolute;
   top:50%;
   text-align:center;
