@@ -10,8 +10,8 @@ document.getElementById("Go").addEventListener("submit", validateForm);
   evt.stopPropagation();  // Stop the form from reloading the page
 
               var From = document.getElementById("from").value;
-               var Subject = document.getElementById("subject").value;
-               var Message = document.getElementById("message").value;
+              var Subject = document.getElementById("subject").value;
+              var Message = document.getElementById("message").value;
             
 
       var MB = $('#MessageBox');
@@ -54,9 +54,31 @@ $("#FromBox").css ({
                 $("#MessageBox").empty();
               MB.append('Please have a message with more than 5 characters');
             }
+         
 
-          var posting = $.post( url, {Name: From, Sub: Subject, Comment: Message } );
-          alert('Your Message has been sent');
-          location.reload();
+       
+
+            $.ajax({
+                    type: "POST",
+                    url: 'Comments.php',
+                    data: {"From": From, "Message": Message},
+                    success: function(data)
+                    {
+                       alert("You have now sent your message");
+                       // location.reload();
+                    }
+                    
+                    });
+
+
+
+
+
+
+
+
+
+
+
             }
  });
