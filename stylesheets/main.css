@@ -55,6 +55,9 @@ table, tr, td, tr
 
 /*navigation links	*/
 /* Remove margins and padding from the list, and add a black background color */
+.nav-wrapper{
+	margin-left:22%;
+}
 ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -74,7 +77,8 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 17px;
+    font-size: 20px;
+    font-weight:bold;
 }
 
 /* Change background color of links on hover */
@@ -94,7 +98,8 @@ ul.topnav li.icon {display: none;}
 	font: 2em Helvetica,Verdana, Arial,sans-serif;
 	padding-bottom:4px;
 	margin-bottom:2%;
-	margin-left: 2%;
+	margin-left: 22%;
+	margin-top:5%;
 	
 	
 	 }
@@ -147,13 +152,9 @@ table.bordered tr th, table.bordered tr td
  #comment-form
  {
 	/*text-align:center*/
-	background: #FFFFFF; 
+	background: #ffffff; 
 	color: #333333;
 	font: 12px Helvetica,Verdana, Arial,sans-serif;
-	/*min-height: 800px;*/
-	width:50%;
-	margin-left:10%;
-	padding:10px;
 	
 	 }
 .formrow{
@@ -164,10 +165,25 @@ table.bordered tr th, table.bordered tr td
 .container
  {
  	float: left;
-    width: 45%;
+    width: 50%;
 	text-align:justify;  	
   	line-height: 180%;
-  	;	
+  	margin-left:22%;	
+ }
+
+ #about-container
+ {
+ 	float: left;
+    width: 500px;
+	text-align:justify;  	
+  	line-height: 180%;
+  	margin-left:22%;	
+ }
+ #video-wrapper
+ {
+ 	float:left;
+ 	width:400px;
+ 	padding:2%;
  }
 	
 #content
@@ -259,6 +275,48 @@ input[type=submit] {
     text-align: left;
   }
 }
+@media screen and (max-width:959px){
+	.container{
+	width:100%;
+	
+	}
+	#about-container{
+	width:70%;
+	}
+	#video-wrapper{
+	width:30%;
+	margin-left:28%;
+
+	}
+}	
+@media screen and (max-width:640px){
+	.container{
+	width:100%;
+	margin-left:2%;
+	}
+	#about-container{
+	width:100%;
+	}
+	#video-wrapper{
+	width:100%;
+	
+	}
+}
+
+@media screen and (max-width:320px){
+	.container{
+	width:100%;
+	margin-left:2%;
+	}
+	#about-container{
+	width:100%;
+	}
+	#video-wrapper{
+	width:100%;
+	
+	}
+}
+
 
 
 
@@ -275,15 +333,15 @@ input[type=submit] {
 }
 
 #hero_header{
-	display:none;	
-  position:absolute;
-  top:50%;
-  text-align:center;
+  display:none;	
+  position: absolute;
+  top:90%;
+  left:22%;
   width:100%;
   color:#fff;
   font-family: 'Josefin Slab', serif;
   /*font-family:'Lobster', cursive; */
-  font-size:36px;
+  font-size:2.5vw;
   -ms-transform: translate(0,-50%); /* IE 9 */
    	-webkit-transform: translate(0,-50%); /* Safari */
     transform: translate(0,-50%); 
